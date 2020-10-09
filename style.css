@@ -161,10 +161,6 @@ h5 {
   transition: all .4s ease-in-out;
   font-family: 'Peddana', sans-serif;
 }
-h5:hover {
-  color: white;
-}
-
 .topRow {
  margin-bottom: 2rem;
 }
@@ -835,10 +831,71 @@ margin-right: 1rem;
   .mobileWrapper {
     text-align: center;
     margin-left: 1rem;
-    line-height: 4rem;
-    margin-top: 6rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+  }
+  #mobileInfo {
+    font-size: .8rem;
+     font-family: 'Nanum Myeongjo', sans-serif;
+    color: white;
+    line-height: 1rem;
+    text-align: justify;
+    word-spacing: -2px;
   }
 }
 
-
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+  .row {
+  text-align: center;
+  margin-right: 2rem;
+  margin-left:  0rem;
+}
+.officer {
+  height: 200px;
+  width: 150px;
+  float: left;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+h5 {
+  color: lavender;
+  text-align: justify;
+  margin-left: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: .1rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+  transition: all .4s ease-in-out;
+  font-family: 'Peddana', sans-serif;
+  
+}
+.topRow {
+ margin-bottom: 1rem;
+}
+.bottomRow {
+  margin-top: 1rem;
+}
+    .notice {
+  color: white;
+  margin-left: 2%;
+  font-size: 1.3rem;
+  font-family: 'Nanum Myeongjo', sans-serif;
+}
+    .faq {
+width: 80%;
+margin-left: 10%;
+color: lavender;
+font-family: 'Nanum Myeongjo', sans-serif;
+font-size: 1.5rem;
+border-bottom: 1px solid white;
+line-height: 2.3rem;
+}
+h2 {
+  font-size: 1.7rem;
+  font-family: 'Cinzel', sans-serif;
+}
+}
 
