@@ -1,0 +1,19 @@
+.management {
+  text-align: center;
+}
+.officer {
+   display: inline-block;
+  width: 150px;
+  height: 200px;
+  border-radius: 10%;
+  margin-top: 3%;
+}
+h5 {
+color: white;
+font-family: 'Peddana', sans-serif;
+font-size: 1.4rem;
+text-align: justify;
+line-height: 1.4rem;
+margin-top: 6%;
+word-spacing: -2px;
+}

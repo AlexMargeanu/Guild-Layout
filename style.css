@@ -1,0 +1,844 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+body {
+  background-color: black;
+}
+.mobileHide {
+  display: none;
+}
+.hide {
+  display: contents;
+}
+.s1 {
+  text-align: center;
+}
+.s1 h1 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  text-transform: uppercase;
+  letter-spacing: 1.3rem;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 3.8rem;
+  color: aliceblue;
+  opacity: 0;
+  animation: SlowFade 5s 3s forwards;
+  border-right: none;
+}
+#cm::first-letter {
+  font-size: 6rem;
+} 
+.underline {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+.underline:after {
+  position: absolute;
+  content: '';
+  bottom: -2px;
+  left: 0px;
+  height: 2px;
+  width: 0%;
+  background-color: lavender;
+  animation: underline 2s ease-in-out 2s forwards; 
+  animation-delay: 4s;
+}
+@keyframes underline {
+  to {
+    width: 100%;
+  }
+}
+
+.s1 p {
+  color: white;
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  animation: SlowFade 5s 5s forwards;
+  opacity: 0;
+  font-family: 'Cinzel', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+.hordeLogo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  display: inline-block;
+  animation: SlowFade ease-in 3s;
+  height: 60%;
+}
+
+@keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Nanum Myeongjo', sans-serif;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  border-right: 1px solid white;
+}
+.head1 {
+  margin-bottom: 3.2rem;
+}
+.head2 {
+  margin-bottom: rem;
+  margin-top: 5rem;
+}
+.lead {
+  width: 80%;
+  margin-left: 15%;
+  top: 16rem;
+  color: white;
+  text-align: justify;
+  font-family: 'Peddana', sans-serif;
+  font-size: 1.9rem;
+  word-spacing: -.2rem;
+  transition: all .7s ease-in-out;
+}
+.row {
+  text-align: center;
+  margin-right: 3rem;
+  margin-left: 20rem;
+}
+.management {
+  width: 40%;
+  height: 40%;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+}
+.officer {
+  height: 200px;
+  width: 150px;
+  float: left;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+h5 {
+  color: lavender;
+  text-align: justify;
+  margin-left: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: .1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: all .4s ease-in-out;
+  font-family: 'Peddana', sans-serif;
+}
+h5:hover {
+  color: white;
+}
+
+.topRow {
+ margin-bottom: 2rem;
+}
+.bottomRow {
+  margin-top: 2rem;
+}
+.faq {
+width: 80%;
+margin-left: 10%;
+color: lavender;
+font-family: 'Nanum Myeongjo', sans-serif;
+font-size: 1.2rem;
+border-bottom: 1px solid white;
+line-height: 2.3rem;
+}
+h2 {
+  font-size: 1.2rem;
+  font-family: 'Cinzel', sans-serif;
+}
+.notice {
+  color: white;
+  margin-left: 17%;
+  font-size: 1.2rem;
+  font-family: 'Nanum Myeongjo', sans-serif;
+}
+.row {
+  padding: 1rem;
+}
+.col-md-4 {
+  padding-left: .5rem;
+}
+.classCard {
+  height: 160px;
+}
+.cardOne {
+  background: url(assets/Death_Knight.jpg);
+  background-size: cover;
+}
+.cardTwo {
+  background: url(assets/Demon_Hunter.jpg);
+  background-size: cover;
+}
+.cardThree {
+  background: url(assets/Druid.jpg);
+  background-size: cover;
+}
+.cardFour {
+  background: url(assets/Hunter.jpg);
+  background-size: cover;
+}
+.cardFive {
+  background: url(assets/Mage.jpg);
+  background-size: cover;
+}
+.cardSix {
+  background: url(assets/Monk.jpg);
+  background-size: cover;
+}
+.cardSeven {
+ background: url(assets/Paladin.jpg);
+ background-size: cover;
+}
+.cardEight {
+  background: url(assets/Priest.jpg);
+  background-size: cover;
+}
+.cardNine {
+  background: url(assets/Rogue.jpg);
+  background-size: cover;
+}
+.cardTen {
+  background: url(assets/Shaman.jpg);
+  background-size: cover;
+}
+.cardEleven {
+  background: url(assets/Warlock.jpg);
+  background-size: cover;
+}
+.cardTwelve {
+  background: url(assets/Warrior.jpg);
+  background-size: cover;
+}
+
+.bloodDK {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.frostDK {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-70%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.unholyDK {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translate(-90%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.havoc {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.vengeance {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.balance {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  transform: translate(-35%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.feral {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translate(-55%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.resto {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  transform: translate(-75%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.guardian {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 95%;
+  top: 50%;
+  transform: translate(-95%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.marksman {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-15%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.beastmaster {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 41%;
+  top: 50%;
+  transform: translate(-41%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.survival {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  transform: translate(-65%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.fire {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.frost {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-70%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.arcane {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translate(-90%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+  filter: blur(3px);
+}
+.brewmaster {
+    height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-10%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.mistweaver {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 32.5%;
+  top: 50%;
+  transform: translate(-32.5%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+  filter: blur(3px);
+}
+.windwalker {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  transform: translate(-55%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+  filter: blur(3px);
+}
+
+.palaprot {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.retribution {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 63%;
+  top: 50%;
+  transform: translate(-63%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.palaholy {
+    height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  transform: translate(-85%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.priestholy {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 17%;
+  top: 50%;
+  transform: translate(-17%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.discipline {
+    height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 37.6%;
+  top: 50%;
+  transform: translate(-37.6%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.shadow {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 58%;
+  top: 50%;
+  transform: translate(-58%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.subtelty {
+     height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.outlaw {
+    height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-25%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.assasination {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  transform: translate(-45%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.enhancement {
+ height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.elemental {
+    height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 63%;
+  top: 50%;
+  transform: translate(-63%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.restoration {
+     height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  transform: translate(-85%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.affliction {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-15%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.demonology {
+    height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 35.6%;
+  top: 50%;
+  transform: translate(-35.6%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.destruction {
+   height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 56%;
+  top: 50%;
+  transform: translate(-56%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.warriorprot {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.arms {
+    height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 63%;
+  top: 50%;
+  transform: translate(-63%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+  filter: blur(3px);
+}
+.fury {
+     height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  transform: translate(-85%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.s7 {
+  text-align: center;
+}
+.cml {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin-top: 5rem;
+  border-radius: 10%;
+  border: 0 solid white;
+  outline: 1px solid white;
+  transition: all .4s ease-in-out;
+}
+h6 {
+  color: lavender;
+  font-size: 1.2rem;
+  font-family: 'Nanum Myeongjo', sans-serif;
+  width: 80%;
+  margin-left: 10%;
+  text-align: justify;
+  margin-bottom: 5rem;
+  line-height: 2.3rem;
+}
+
+.cml:hover {
+  transform: scale(1.5);
+  border: 1px solid white;
+  box-shadow: inset 0 0 12px rgba(255,255,255, 0.9), 0 0 12px rgba(255,255,255, 0.9);
+  outline-color: lavender;
+  outline-offset: 17px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    background-color: black;
+  }
+.mobileHide {
+    display: contents;
+}
+  .conceal {
+display: none;
+}
+.s1 {
+  text-align: center;
+}
+.s1 h1 {
+  top: 70%;
+  left: 40%;
+  transform: translate(-40%, -70%);
+  text-transform: uppercase;
+  letter-spacing: .9rem;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 1.1rem;
+  color: aliceblue;
+  opacity: 0;
+  animation: SlowFade 5s 3s forwards;
+  border: none;
+}
+#cm::first-letter {
+  font-size: 1.1rem;
+} 
+.underline {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+.underline:after {
+  position: absolute;
+  content: '';
+  bottom: -2px;
+  left: 0px;
+  height: 2px;
+  width: 0%;
+  background-color: lavender;
+  animation: underline 2s ease-in-out 2s forwards; 
+  animation-delay: 4s;
+}
+
+@keyframes underline {
+  to {
+    width: 96%;
+  }
+}
+
+.s1 p {
+  color: white;
+  position: absolute;
+  top: 77%;
+  left: 55%;
+  transform: translate(-55%, -77%);
+  animation: SlowFade 5s 5s forwards;
+  opacity: 0;
+  font-family: 'Cinzel', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: .8rem;
+}
+.hordeLogo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  display: inline-block;
+  animation: SlowFade ease-in 3s;
+  height: 60%;
+}
+
+@keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes SlowFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+  h1 {
+  border-right: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Nanum Myeongjo', sans-serif;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+  .mobilep {
+    color: white;
+    width: 86%;
+    text-align: justify;
+    margin-left: .5rem;
+  }
+  .mobilepic {
+ width: 7rem;
+ height: 8rem;
+ display: inline-block;
+ margin-bottom: 1.2rem;
+ border-radius: 10%;
+margin-left: 1rem;
+margin-right: 1rem;
+}
+  .managementSection {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    height: 80%;
+  }
+  .managementSection h1 {
+    font-size: 1rem;
+    font-family: 'Nanum Myeongjo', sans-serif;
+    letter-spacing: .3rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    margin-top: -5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .faq p {
+    font-size: .8rem;
+    line-height: 1rem;
+  }
+  .s5 {
+    margin-left: -1rem;
+  }
+  .mobileWrapper {
+    width: 90%;
+    height: 100%;
+  }
+  h6 {
+   color: lavender;
+  font-size: 1rem;
+  font-family: 'Nanum Myeongjo', sans-serif;
+  width: 80%;
+  margin-left: 7%;
+  text-align: justify;
+  margin-bottom: 1rem;
+  line-height: 1.1rem;
+}
+  #hone {
+    font-size: 1rem;
+  }
+  .cml {
+    margin-top: 2rem;
+  }
+  .mobileWrapper img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid;
+  }
+  .mobileWrapper {
+    text-align: center;
+    margin-left: 1rem;
+    line-height: 4rem;
+    margin-top: 6rem;
+  }
+}
+
+
+
