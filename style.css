@@ -4,6 +4,9 @@
   box-sizing: border-box;
   background-color: black;
 }
+.blur {
+  filter: blur(3px);
+}
 body {
   background-color: black;
 }
@@ -149,9 +152,10 @@ h1 {
   float: left;
   margin-right: 1rem;
   margin-left: 1rem;
+  border-radius: 10%;
 }
 h5 {
-  color: lavender;
+  color: dimgrey;
   text-align: justify;
   margin-left: 1rem;
   line-height: 1.5rem;
@@ -160,6 +164,9 @@ h5 {
   font-weight: 300;
   transition: all .4s ease-in-out;
   font-family: 'Peddana', sans-serif;
+}
+h5:hover {
+  color: lavender;
 }
 .topRow {
  margin-bottom: 2rem;
@@ -397,7 +404,6 @@ h2 {
   transform: translate(-90%, -50%);
   border-radius: 50%;
   border: 2px solid black;
-  filter: blur(3px);
 }
 .brewmaster {
     height: 50px;
@@ -418,7 +424,6 @@ h2 {
   transform: translate(-32.5%, -50%);
   border-radius: 50%;
   border: 2px solid black;
-  filter: blur(3px);
 }
 .windwalker {
    height: 50px;
@@ -429,7 +434,6 @@ h2 {
   transform: translate(-55%, -50%);
   border-radius: 50%;
   border: 2px solid black;
-  filter: blur(3px);
 }
 
 .palaprot {
@@ -606,7 +610,6 @@ h2 {
   transform: translate(-63%, -50%);
   border-radius: 50%;
   border: 2px solid black;
-  filter: blur(3px);
 }
 .fury {
      height: 50px;
@@ -623,13 +626,12 @@ h2 {
   text-align: center;
 }
 .cml {
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
   display: inline-block;
   margin-top: 5rem;
-  border-radius: 10%;
-  border: 0 solid white;
-  outline: 1px solid white;
+  border-radius: 20%;
+  border: 1px solid white;
   transition: all .4s ease-in-out;
 }
 h6 {
@@ -644,11 +646,11 @@ h6 {
 }
 
 .cml:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
   border: 1px solid white;
-  box-shadow: inset 0 0 12px rgba(255,255,255, 0.9), 0 0 12px rgba(255,255,255, 0.9);
-  outline-color: lavender;
-  outline-offset: 17px;
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.9), 0 0 12px rgba(255,255,255, 0.9);
+  outline-color: white;
+  outline-offset: 13px;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -768,6 +770,7 @@ display: none;
     width: 86%;
     text-align: justify;
     margin-left: .5rem;
+    letter-spacing: -1px;
   }
   .mobilepic {
  width: 7rem;
@@ -842,6 +845,12 @@ margin-right: 1rem;
     text-align: justify;
     word-spacing: -2px;
   }
+  .blur {
+      filter: blur(3px);
+    }
+  .iconException {
+    margin-top: 1rem;
+  }
 }
 
 @media only screen 
@@ -897,5 +906,6 @@ h2 {
   font-size: 1.7rem;
   font-family: 'Cinzel', sans-serif;
 }
+  
 }
 
